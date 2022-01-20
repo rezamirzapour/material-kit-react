@@ -17,12 +17,12 @@ export default function RegisterForm() {
 
   const RegisterSchema = Yup.object().shape({
     firstName: Yup.string()
-      .min(2, 'Too Short!')
-      .max(50, 'Too Long!')
-      .required('First name required'),
-    lastName: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!').required('Last name required'),
-    email: Yup.string().email('Email must be a valid email address').required('Email is required'),
-    password: Yup.string().required('Password is required')
+      .min(2, 'خیلی کوتاه است!')
+      .max(50, 'خیلی بلند است!')
+      .required('نام اجباری است'),
+    lastName: Yup.string().min(2, 'خیلی کوتاه است!').max(50, 'خیلی بلند است!').required('نام خانوادگی اجباری است'),
+    email: Yup.string().email('فرمت ایمیل باید معتبر باشد').required('ایمیل اجباری است'),
+    password: Yup.string().required('رمز عبور اجباری است')
   });
 
   const formik = useFormik({
@@ -47,7 +47,7 @@ export default function RegisterForm() {
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
             <TextField
               fullWidth
-              label="First name"
+              label="نام"
               {...getFieldProps('firstName')}
               error={Boolean(touched.firstName && errors.firstName)}
               helperText={touched.firstName && errors.firstName}
@@ -55,7 +55,7 @@ export default function RegisterForm() {
 
             <TextField
               fullWidth
-              label="Last name"
+              label="نام خانوادگی"
               {...getFieldProps('lastName')}
               error={Boolean(touched.lastName && errors.lastName)}
               helperText={touched.lastName && errors.lastName}
@@ -66,7 +66,7 @@ export default function RegisterForm() {
             fullWidth
             autoComplete="username"
             type="email"
-            label="Email address"
+            label="آدرس ایمیل"
             {...getFieldProps('email')}
             error={Boolean(touched.email && errors.email)}
             helperText={touched.email && errors.email}
@@ -76,7 +76,7 @@ export default function RegisterForm() {
             fullWidth
             autoComplete="current-password"
             type={showPassword ? 'text' : 'password'}
-            label="Password"
+            label="رمز عبور"
             {...getFieldProps('password')}
             InputProps={{
               endAdornment: (
@@ -98,7 +98,7 @@ export default function RegisterForm() {
             variant="contained"
             loading={isSubmitting}
           >
-            Register
+            ثبت نام
           </LoadingButton>
         </Stack>
       </Form>

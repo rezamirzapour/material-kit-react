@@ -41,18 +41,18 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 export default function Register() {
   return (
-    <RootStyle title="Register | Minimal-UI">
+    <RootStyle title="ثبت نام">
       <AuthLayout>
-        Already have an account? &nbsp;
+        درحال حاضر حساب کاربری دارید؟ &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to="/login">
-          Login
+          ورود
         </Link>
       </AuthLayout>
 
       <MHidden width="mdDown">
         <SectionStyle>
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Manage the job more effectively with Minimal
+            خوش آمدید
           </Typography>
           <img alt="register" src="/static/illustrations/illustration_register.png" />
         </SectionStyle>
@@ -62,10 +62,10 @@ export default function Register() {
         <ContentStyle>
           <Box sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
-              Get started absolutely free.
+              بطور کاملا رایگان شروع کنید
             </Typography>
             <Typography sx={{ color: 'text.secondary' }}>
-              Free forever. No credit card needed.
+              رایگان برای همیشه، بدون احتیاج به کارت اعتباری
             </Typography>
           </Box>
 
@@ -74,22 +74,22 @@ export default function Register() {
           <RegisterForm />
 
           <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-            By registering, I agree to Minimal&nbsp;
+            با ثبت نام در سایت، کلیه قوانین آن را میپذیرم&nbsp;
             <Link underline="always" sx={{ color: 'text.primary' }}>
-              Terms of Service
+              قوانین
             </Link>
-            &nbsp;and&nbsp;
+            &nbsp;و&nbsp;
             <Link underline="always" sx={{ color: 'text.primary' }}>
-              Privacy Policy
+              مقررات
             </Link>
             .
           </Typography>
 
           <MHidden width="smUp">
             <Typography variant="subtitle2" sx={{ mt: 3, textAlign: 'center' }}>
-              Already have an account?&nbsp;
+              درحال حاضر حساب کاربری دارید؟&nbsp;
               <Link to="/login" component={RouterLink}>
-                Login
+                ورود
               </Link>
             </Typography>
           </MHidden>

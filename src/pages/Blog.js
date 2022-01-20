@@ -12,9 +12,9 @@ import POSTS from '../_mocks_/blog';
 // ----------------------------------------------------------------------
 
 const SORT_OPTIONS = [
-  { value: 'latest', label: 'Latest' },
-  { value: 'popular', label: 'Popular' },
-  { value: 'oldest', label: 'Oldest' }
+  { value: 'latest', label: 'آخرین ها' },
+  { value: 'popular', label: 'محبوب ترین ها' },
+  { value: 'oldest', label: 'قدیمی ترین ها' }
 ];
 
 // ----------------------------------------------------------------------
@@ -25,7 +25,7 @@ export default function Blog() {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h4" gutterBottom>
-            Blog
+            مقالات
           </Typography>
           <Button
             variant="contained"
@@ -33,7 +33,7 @@ export default function Blog() {
             to="#"
             startIcon={<Icon icon={plusFill} />}
           >
-            New Post
+            افزودن مقاله جدید
           </Button>
         </Stack>
 

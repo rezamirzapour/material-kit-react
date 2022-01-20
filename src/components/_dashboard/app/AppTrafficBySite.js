@@ -60,7 +60,7 @@ function SiteItem({ site }) {
 export default function AppTrafficBySite() {
   return (
     <Card>
-      <CardHeader title="Traffic by Site" />
+      <CardHeader title="ترافیک سایت" />
       <CardContent>
         <Grid container spacing={2}>
           {SOCIALS.map((site) => (

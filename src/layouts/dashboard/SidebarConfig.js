@@ -13,37 +13,37 @@ const getIcon = (name) => <Icon icon={name} width={22} height={22} />;
 
 const sidebarConfig = [
   {
-    title: 'dashboard',
+    title: 'داشبرد',
     path: '/dashboard/app',
     icon: getIcon(pieChart2Fill)
   },
   {
-    title: 'user',
+    title: 'کاربران',
     path: '/dashboard/user',
     icon: getIcon(peopleFill)
   },
   {
-    title: 'product',
+    title: 'محصولات',
     path: '/dashboard/products',
     icon: getIcon(shoppingBagFill)
   },
   {
-    title: 'blog',
+    title: 'مقالات',
     path: '/dashboard/blog',
     icon: getIcon(fileTextFill)
   },
   {
-    title: 'login',
+    title: 'ورود',
     path: '/login',
     icon: getIcon(lockFill)
   },
   {
-    title: 'register',
+    title: 'ثبت نام',
     path: '/register',
     icon: getIcon(personAddFill)
   },
   {
-    title: 'Not found',
+    title: '۴۰۴',
     path: '/404',
     icon: getIcon(alertTriangleFill)
   }

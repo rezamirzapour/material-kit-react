@@ -86,7 +86,7 @@ export default function AppOrderTimeline() {
         }
       }}
     >
-      <CardHeader title="Order Timeline" />
+      <CardHeader title="جدول زمانی سفارش ها" />
       <CardContent>
         <Timeline>
           {TIMELINES.map((item, index) => (

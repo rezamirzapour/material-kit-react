@@ -43,7 +43,7 @@ export default function AppConversionRates() {
 
   return (
     <Card>
-      <CardHeader title="Conversion Rates" subheader="(+43%) than last year" />
+      <CardHeader title="نرخ تبدیل" subheader="(+43%) نسبت به سال قبل" />
       <Box sx={{ mx: 3 }} dir="ltr">
         <ReactApexChart type="bar" series={CHART_DATA} options={chartOptions} height={364} />
       </Box>
