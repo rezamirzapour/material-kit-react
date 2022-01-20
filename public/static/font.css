@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Iran-Yekan;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 100;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 200;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 300;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 500;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 600;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Iran-Yekan;
+    font-weight: 700;
+    font-style: normal;
+    src: url('./fonts/IRANYekanMobileRegular.ttf') format('truetype');
+  }
